@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Bookdetails = () => {
     const slug = useParams();
@@ -23,11 +24,19 @@ const Bookdetails = () => {
 
         getSingleBook();
     }, [slug.id]);
+
+    const wishListMassage = () => {
+        toast.success(`${book.bookId}-${book.bookName} has been successfully added to the Wishlist.`);
+      };
+
+      const cartListMassage = () => {
+        toast.success(`${book.bookId}-${book.bookName} has been successfully added to the Cart.`);
+      };
+
     return (
         <div>
             <div className="max-w-6xl mx-auto my-10 p-6 bg-white rounded-lg shadow-lg">
                 <div className="flex flex-col lg:flex-row gap-8">
-                    {/* Left: Book Image */}
                     <div className="lg:w-1/3 flex justify-center items-start">
                         <img
                             src={book.image}
@@ -35,8 +44,6 @@ const Bookdetails = () => {
                             className="rounded-lg shadow-md object-cover h-96 w-full"
                         />
                     </div>
-
-                    {/* Right: Book Information */}
                     <div className="lg:w-2/3">
                         <h2 className="text-3xl font-bold mb-4">{book.bookName}</h2>
                         <p className="text-lg text-gray-700 mb-2">
@@ -55,7 +62,6 @@ const Bookdetails = () => {
                             <span className="font-semibold">Rating:</span> {book.rating} / 5
                         </p>
 
-                        {/* Tags */}
                         <div className="mb-4">
                             <span className="font-semibold text-lg">Tags:</span>
                             <div className="flex gap-2 mt-2">
@@ -70,17 +76,15 @@ const Bookdetails = () => {
                             </div>
                         </div>
 
-                        {/* Review */}
                         <p className="text-lg text-gray-700 mb-6">
                             <span className="font-semibold">Review:</span> {book.review}
                         </p>
 
-                        {/* Action Buttons */}
                         <div className="flex gap-4">
-                            <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                            <button onClick={wishListMassage} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
                                 Wish to Read
                             </button>
-                            <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                            <button onClick={cartListMassage} className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
                                 Add to Cart
                             </button>
                         </div>

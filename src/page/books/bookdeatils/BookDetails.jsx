@@ -35,7 +35,7 @@ const Bookdetails = () => {
 
     return (
         <div>
-            <div className="max-w-6xl mx-auto my-10 p-6 bg-white rounded-lg shadow-lg">
+            <div className="max-w-6xl mx-auto my-10 p-6 bg-white rounded-lg">
                 <div className="flex flex-col lg:flex-row gap-8">
                     <div className="lg:w-1/3 flex justify-center items-start">
                         <img

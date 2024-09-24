@@ -19,7 +19,7 @@ const Books = () => {
         fetchData();
     }, [])
     return (
-        <div>
+        <div className="px-4 mt-6 container mx-auto">
             <div className="px-4 text-center">
                 <h2 className="text-4xl font-bold mb-2 text-orange-500">Our Book Collection</h2>
                 <p className="text-lg mb-6 text-orange-300">

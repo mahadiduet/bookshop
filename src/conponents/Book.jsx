@@ -4,10 +4,10 @@ const Book = ({ book }) => {
     // console.log(book);
     const { bookId, image, author, bookName, tags, rating, category } = book;
     return (
-        <div className="card bg-white shadow-xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        <div className="card bg-white shadow-xl p-5 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
             {/* Image Section */}
             <figure className="relative">
-                <img className="w-full h-56 object-cover" src={image} alt={bookName} />
+                <img className="w-full rounded-lg h-56 object-cover" src={image} alt={bookName} />
                 <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white text-sm p-2 w-full text-center">
                     {category}
                 </div>
@@ -26,7 +26,7 @@ const Book = ({ book }) => {
                 {/* Tags */}
                 <div className="flex flex-wrap items-center gap-2 mb-4">
                     <span className="font-semibold text-gray-700">Tags:</span>
-                    {tags.map((tag, index) => (
+                    {tags?.map((tag, index) => (
                         <div key={index} className="badge badge-outline border-gray-400 text-gray-600 px-3 py-1 rounded-full">
                             {tag}
                         </div>

@@ -2,7 +2,7 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Live link: https://bookshop-git-main-md-emam-mahadis-projects.vercel.app
+Live link: https://classy-pavlova-33105a.netlify.app
 
 
 Fetures:

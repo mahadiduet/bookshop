@@ -3,6 +3,8 @@ import Homepage from "../page/homepage/Homepage";
 import Faqpage from "../page/faq/Faqpage";
 import Bookpage from "../page/books/bookpage";
 import Errorpage from "../page/error/Errorpage";
+import Aboutpage from "../page/about/Aboutpage";
+import Blogpage from "../page/blog/Blogpage";
 
 export const router = createBrowserRouter([
     {
@@ -17,5 +19,13 @@ export const router = createBrowserRouter([
     {
         path: `/faq`,
         element: <Faqpage />
+    },
+    {
+        path: `/about`,
+        element: <Aboutpage />
+    },
+    {
+        path: `/blog`,
+        element: <Blogpage />
     }
 ]);

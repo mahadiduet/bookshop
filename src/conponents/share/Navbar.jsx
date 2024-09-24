@@ -1,11 +1,29 @@
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
     const menu = <>
-        <li><a className="text-xl font-semibold" href="/">Home</a></li>
-        <li><a className="text-xl font-semibold" href="">About</a></li>
-        <li><a className="text-xl font-semibold" href="">Blog</a></li>
-        <li><a className="text-xl font-semibold" href="/faq">FAQ</a></li>
+        <li className="text-xl font-semibold">
+            <NavLink to='/' className={({ isActive }) =>
+                isActive ? "text-white bg-orange-500 px-3 py-2 rounded" : "hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            }>Home</NavLink>
+        </li>
+        <li className="text-xl font-semibold">
+            <NavLink to='/about' className={({ isActive }) =>
+                isActive ? "text-white bg-orange-500 px-3 py-2 rounded" : "hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            }>About</NavLink>
+        </li>
+        <li className="text-xl font-semibold">
+            <NavLink to='/blog' className={({ isActive }) =>
+                isActive ? "text-white bg-orange-500 px-3 py-2 rounded" : "hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            }>Blog</NavLink>
+        </li>
+        <li className="text-xl font-semibold">
+            <NavLink to='/faq' className={({ isActive }) =>
+                isActive ? "text-white bg-orange-500 px-3 py-2 rounded" : "hover:bg-gray-700 hover:text-white px-3 py-2 rounded"
+            }>FAQ</NavLink>
+        </li>
+
     </>
     return (
         <div className="navbar bg-base-200 shadow-sm">
@@ -31,7 +49,7 @@ const Navbar = () => {
                         {menu}
                     </ul>
                 </div>
-                <a href="/" className="btn btn-ghost text-xl">Book<span className="text-orange-500">Shop</span></a>
+                <Link to='/' className="btn btn-ghost text-xl inline-block">Book<span className="text-orange-500">Shop</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

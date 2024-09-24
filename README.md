@@ -1,5 +1,7 @@
 # React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
 Live link: https://bookshop-git-main-md-emam-mahadis-projects.vercel.app
 
 
@@ -19,8 +21,6 @@ Data Handling: Utilizes JSON data to dynamically book information.
 User Interface: Styled with Tailwind CSS for a modern, responsive design.
 
 Deployment: Instructions for deploying on platforms like Vercel.
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 

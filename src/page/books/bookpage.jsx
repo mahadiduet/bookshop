@@ -1,3 +1,4 @@
+import Footer from "../../conponents/share/Footer";
 import Navbar from "../../conponents/share/Navbar";
 import Bookdetails from "./bookdeatils/bookdetails";
 
@@ -6,6 +7,7 @@ const Bookpage = () => {
         <div>
             <Navbar />
             <Bookdetails />
+            <Footer />
         </div>
     );
 };

@@ -1,3 +1,4 @@
+import Footer from "../../conponents/share/Footer";
 import Navbar from "../../conponents/share/Navbar";
 import Faq from "./Faq";
 
@@ -6,6 +7,7 @@ const Faqpage = () => {
         <div>
             <Navbar />
             <Faq />
+            <Footer />
         </div>
     );
 };

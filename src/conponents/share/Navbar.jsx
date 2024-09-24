@@ -3,8 +3,8 @@ const Navbar = () => {
 
     const menu = <>
         <li><a className="text-xl font-semibold" href="/">Home</a></li>
-        <li><a className="text-xl font-semibold" href="/about">About</a></li>
-        <li><a className="text-xl font-semibold" href="/blog">Blog</a></li>
+        <li><a className="text-xl font-semibold" href="">About</a></li>
+        <li><a className="text-xl font-semibold" href="">Blog</a></li>
         <li><a className="text-xl font-semibold" href="/faq">FAQ</a></li>
     </>
     return (

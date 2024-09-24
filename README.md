@@ -1,5 +1,23 @@
 # React + Vite
 
+Live link:
+Fetures:
+Responsive Navbar: Includes logo on the left, menu options (Home, About, Blog, FAQ) centered, and "Buy Book" and "Sign In" buttons.
+
+Dynamic Routing: Seamless navigation using React Router for multiple pages.
+
+Banner/Carousel: Features a caption and a "Buy Book" button with a relevant image.
+
+Book Cards: Each card displays an image, tags, book name, author, category, rating, and a "Book Details" button.
+
+Book Details Page: Shows detailed book information including image, author, category, review, and action buttons.
+
+Data Handling: Utilizes JSON data to dynamically book information.
+
+User Interface: Styled with Tailwind CSS for a modern, responsive design.
+
+Deployment: Instructions for deploying on platforms like Vercel.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
